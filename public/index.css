@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --light-blue: hsl(236, 72%, 79%);
+  --dark-blue: hsl(237, 63%, 64%);
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+body {
+  font: 700 15px "Montserrat", sans-serif;
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  grid-template-columns: 12% 25% 25% 25% 12%;
+  margin: auto;
+  background: var(--very-light-grayish-blue);
+  text-align: center;
+  height: 100vh;
+}
+#a-m-selector {
+  color: var(--grayish-blue);
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  margin-top: 2rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--light-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+#pricing-grid {
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-top: 1.5rem;
+  height: 85%;
+}
+.module {
+  border-radius: 0.5rem;
+}
+.white-module {
+  box-shadow: 0px 1px 8px 0px rgba(179, 181, 198, 1);
+  background: white;
+  color: var(--grayish-blue);
+  margin: 1.25rem 0 1.2rem 0;
+}
+.blue-module {
+  background: var(--linear-gradient);
+  color: white;
+  padding-top: 1.25rem;
+}
+
+h3 {
+  padding-top: 1.25rem;
+}
+.price {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.content {
+  padding: 1.5rem;
+}
+
+.benefit-container {
+  border-top: solid 1px var(--light-grayish-blue);
+  padding: 1rem;
+}
+button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 85%;
+  margin: 1rem auto 1.75rem auto;
+  outline: none;
+  border-style: none;
+  text-transform: uppercase;
+}
+.bottom-border {
+  border-bottom: solid 1px var(--light-grayish-blue);
+}
+.blue-button {
+  background: var(--linear-gradient);
+  color: white;
+}
+.blue-button:active {
+  background: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid var(--dark-grayish-blue);
+}
+.white-button {
+  background: white;
+  color: hsl(237, 63%, 64%);
+}
+.white-button:active {
+  background: var(--dark-blue);
+  color: white;
+  border: 1px solid white;
+}
+footer {
+  color: var(--light-grayish-blue);
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+}
+a {
+  color: var(--light-grayish-blue);
+}
+/* background: url("./images/bg-top.svg") no-repeat; */
