@@ -7,13 +7,10 @@ function check() {
     basicPrice.innerText = "$19.99";
     professionalPrice.innerText = "$24.99";
     masterPrice.innerText = "$39.99";
-    console.log(checkBox.checked);
   } else {
     basicPrice.innerText = "$199.99";
     professionalPrice.innerText = "$249.99";
     masterPrice.innerText = "$399.99";
-
-    console.log(checkBox.checked);
   }
 }
 
