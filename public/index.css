@@ -22,7 +22,7 @@ body {
   background-color: var(--very-light-grayish-blue);
   background-image: url("images/bg-top.svg");
   background-repeat: no-repeat;
-  background-position: 11rem 1rem;
+  background-position: 12rem -2rem;
 }
 
 #a-m-selector {
@@ -129,8 +129,9 @@ a {
     grid-column-end: span 3;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin-top: 1.5rem;
+    margin-top: 4.5rem;
     height: 85%;
+    width: 100%;
   }
   .white-module {
     margin: 1.25rem 0 1.2rem 0;
